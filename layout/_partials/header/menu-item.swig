@@ -27,7 +27,7 @@
       {%- endfor %}
     {%- endif %}
 
-    {{ next_url(itemURL, menuIcon + menuText + menuBadge, {rel: 'section'}) }}
+    {{ next_url(itemURL, menuIcon, {rel: 'section'}) }}
 
   </li>
 

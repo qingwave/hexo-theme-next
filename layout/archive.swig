@@ -2,8 +2,6 @@
 {% import '_macro/post-collapse.swig' as post_template with context %}
 {% import '_macro/sidebar.swig' as sidebar_template with context %}
 
-{% block title %}{{ __('title.archive') }} | {{ title }}{% endblock %}
-
 {% block class %}archive{% endblock %}
 
 {% block content %}

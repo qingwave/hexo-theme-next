@@ -13,7 +13,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : '{{ theme.gitalk.repo }}',
       owner       : '{{ theme.gitalk.github_id }}',
       admin       : ['{{ theme.gitalk.admin_user }}'],
-      id          : '{{ gitalk_md5(page.path) }}',
+      id          : '{{ date(page.date, 'YYYY-MM-DDTHH-mm-ss') }}',
       {%- if theme.gitalk.language == '' %}
         language: window.navigator.language || window.navigator.userLanguage,
       {% else %}
